@@ -1,0 +1,39 @@
+.card{
+    width: 330px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 4px black;
+}
+.image{
+    width: 100%;
+}
+.card-body
+{
+    padding: 10px;
+    background-color: #761;
+    
+}
+.card-heading{
+    font-size: 2rem;
+    text-align: center;
+    color: aqua;
+}
+.card-des{
+    text-align: justify;
+    line-height: 1.2;
+    color: white;
+   
+}
+.card:hover{
+    box-shadow: 6px 12px 10px white;
+}
+.card-container{
+    box-sizing: border-box;
+    display: flex;
+    background-color:cadetblue;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

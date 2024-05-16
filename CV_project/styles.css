@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#EEE;
+    
+}
+.container{
+    max-width: 1000px;
+    background-color: #E4F9F5;
+    margin: 0 auto;
+    padding: 20px;
+}
+.pr_img{
+    width: 100px;
+    height: 120px;
+    border: 3px solid white;
+    border-radius: 50%;
+    float: left;
+}
+.header-bio{
+    float: left;
+    padding: 30px;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #11999e;
+}
+.header-contact{
+    float: right;
+    padding: 30px;
+}
+.header-contact a{
+    /* float: right; */
+    text-decoration: none;
+    color: teal;
+    font-weight: bold;
+}
+.header-contact a:hover{
+    /* float: right; */
+    text-decoration: underline;
+    color: tomato;
+}
+.div-clear{
+    clear: both;
+}
+hr{
+    border: 2px solid black;
+    margin: 20px auto;
+    width: 100%;
+    border-bottom: none;
+}
+/* Personal section starts from here */
+.content{
+    margin: 30px;
+}
+.left-div{
+width: 30%;
+float: left;
+}
+.right-div{
+    width: 70%;
+    float: left;
+    /* text-align: justify; */
+}
+/* Personal section ends from here */
+
+/* common horizontal rol */
+.com-hor{
+    width: 100%;
+    border: 1px solid black;
+    border-bottom: none;
+    margin: 20px auto;
+
+}
+.edu-left-div{
+    float: left;
+    width: 45%;
+    /* border: solid white; */
+}
+.edu-right-div{
+    float: right;
+    width: 45%;
+    /* border: solid white; */
+}
+
+.ref-left-div{
+    float: left;
+    width: 45%;
+}
+.ref-right-div{
+    float: right;
+    width: 45%;
+}
+.foter{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+.foter a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+.foter a:hover{
+    text-decoration: underline;
+    color: tomato;
+}
+.foter p{
+    color: white;
+    margin: 10px;
+}
+.hrr{
+    float: right;
+    width: 45%;
+    border: 1px solid black;
+    border-bottom: none;
+}
+.con-sir a{
+    text-decoration: none;
+}
+.con-sir a:hover{
+    text-decoration: underline;
+    color: tomato;
+}
