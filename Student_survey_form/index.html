@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Student Survey Form</h1>
+    <p id="description">Thank you for giving your valuable time to complete this survey.</p>
+    <form id="survey-form">
+
+        <fieldset class="f1">
+            <label id="name-label" for="name">Enter your name</label>
+            <input id="name" type="text" name="name" required placeholder="Name">
+        </fieldset>
+
+        <fieldset class="f1">
+            <label id="email-label" for="email">Enter your E-mail</label>
+            <input id="email" type="email" name="email" required placeholder="E-mail">
+        </fieldset>
+
+        <fieldset class="f1">
+            <label id="number-label" for="number">Enter your age</label>
+            <input id="number" type="number" name="age" min="8" max="255" required placeholder="Age">
+        </fieldset>
+
+        <fieldset>
+            <label for="position">Which option best describes your current position?</label>
+            <select id="position" name="position">
+                <option value="">Select One</option>
+                <option value="student">Running Student</option>
+                <option value="graduated">Graduated</option>
+                <option value="other">Involved in another profession</option>
+            </select>
+        </fieldset>
+
+        <fieldset class="inline">
+            <legend>Would you like to participate in this survey?</legend>
+            <label for="definitely">
+                <input type="radio" id="definitely" value="definitely" name="participation"> Definitely
+            </label>
+            <label for="maybe">
+                <input type="radio" id="maybe" value="maybe" name="participation"> Maybe
+            </label>
+            <label for="notsure">
+                <input type="radio" id="notsure" value="notsure" name="participation"> Not sure
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="department">In which department would you like to be admitted?</label>
+            <select id="department" name="department">
+                <option value="">Select One</option>
+                <option value="cse">CSE</option>
+                <option value="iit">IIT</option>
+                <option value="physics">PHYSICS</option>
+                <option value="chemistry">CHEMISTRY</option>
+                <option value="mathematics">MATHEMATICS</option>
+                <option value="zoology">ZOOLOGY</option>
+                <option value="botany">BOTANY</option>
+                <option value="bmb">BMB</option>
+                <option value="genetics">GENETICS</option>
+            </select>
+        </fieldset>
+
+        <fieldset class="inline">
+            <legend>What factors influenced your choice of this university?</legend>
+            <label for="reputation">
+                <input type="checkbox" id="reputation" value="reputation" name="factors"> Reputation
+            </label>
+            <label for="environment">
+                <input type="checkbox" id="environment" value="environment" name="factors"> Environment
+            </label>
+            <label for="teachers">
+                <input type="checkbox" id="teachers" value="teachers" name="factors"> Teachers' behavior
+            </label>
+            <label for="facilities">
+                <input type="checkbox" id="facilities" value="facilities" name="factors"> Hall facilities
+            </label>
+            <label for="proximity">
+                <input type="checkbox" id="proximity" value="proximity" name="factors"> Close to home
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Leave your suggestion or comment</legend>
+            <textarea name="comments" placeholder="Enter your comment here..." rows="3" cols="25"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
