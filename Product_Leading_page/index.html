@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <!-- Header Section -->
+  <header id="header">
+    <img
+      id="header-img"
+      src="https://www.shutterstock.com/image-vector/hand-delivery-icon-vector-sign-260nw-1704463690.jpg"
+      alt="Logo"
+    />
+    <nav id="nav-bar">
+      <p>Product Landing Page</p>
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Video -->
+  <section id="hero">
+    <h1>Welcome to Our Product</h1>
+    <p>Experience the best product of its kind.</p>
+    <iframe
+      id="video"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/V1RiMIM8t0I?si=NlP8iSvaQQ-0Ky3u"
+      title="Introduction to Our Product"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="text-center">
+    <h2>Features</h2>
+    <p>Our product offers unique features designed to make your life easier.</p>
+    <div class="features-container">
+      <div class="feature">
+        <i class="fas fa-laptop-code feature-icon"></i>
+        <h3>Intuitive Design</h3>
+        <p>
+          Our user-friendly interface allows you to navigate effortlessly
+          and find what you need in no time.
+        </p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-plug feature-icon"></i>
+        <h3>Seamless Integration</h3>
+        <p>
+          Integrate with your existing tools and workflows without any
+          hassle, making the transition smooth.
+        </p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-headset feature-icon"></i>
+        <h3>24/7 Customer Support</h3>
+        <p>
+          Our dedicated support team is always available to assist you,
+          ensuring you have the help you need, when you need it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <p>Choose the plan that fits your needs.</p>
+  </section>
+
+  <!-- Contact Section with Form -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form
+      id="form"
+      action="https://www.freecodecamp.com/email-submit"
+      method="post"
+    >
+      <label for="email">Subscribe for Updates:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <input type="submit" id="submit" value="Subscribe" />
+    </form>
+  </section>
+</body>
+</html>

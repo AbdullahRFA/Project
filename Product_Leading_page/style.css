@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styling */
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  #header-img {
+    height: 50px;
+  }
+  
+  #nav-bar {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  .nav-link:hover {
+    color: #f0a500;
+  }
+  
+  /* Hero Section */
+  #hero p{
+    padding:10px 0 20px 0 ;
+  }
+  #hero {
+    padding: 100px; /* Offset for fixed header */
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+  
+  #video-container {
+    padding-top: 500px;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 1rem;
+  }
+  
+  /* Features and Pricing Sections */
+  section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Form Styling */
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  #email {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  #submit {
+    padding: 0.5rem 1rem;
+    background-color: #471aeb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  
+  #submit:hover {
+    background-color: #e11010;
+  }
+  
+  /* Flexbox Usage */
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Media Query */
+  @media (max-width: 768px) {
+    #nav-bar {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    #video {
+      width: 100%;
+    }
+  }
+  nav p{
+    color: white;
+    padding-right: 200px;
+    padding-top: 3px;
+    font-size: 35px;
+  }
+
+  .features-container {
+    display: flex;
+    justify-content: space-around; /* Space out the features */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 20px 0; /* Add some margin */
+  }
+  
+  .feature {
+    flex: 1 1 300px; /* Grow and shrink, minimum width of 300px */
+    max-width: 300px; /* Prevent features from growing too large */
+    margin: 10px; /* Add margin between features */
+    text-align: center; /* Center the text within each feature */
+  }
+  
+  
+
+  .feature-icon {
+    font-size: 2.5rem; /* Adjust the size as needed */
+    color: #007bff; /* Change the color to match your theme */
+    margin-bottom: 10px; /* Add some space below the icon */
+  }
+
