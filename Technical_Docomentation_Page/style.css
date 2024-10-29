@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styling the Navbar */
+  #navbar {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color: #f4f4f9;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  #navbar header {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 10px 0;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #007acc;
+  }
+  
+  /* Main content */
+  #main-doc {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  
+  .main-section {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  .intro-list{
+    padding-left:50px ;
+
+  }
+  .intro-list li{
+    padding: 5px;
+  }
+  .main-section header {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Code blocks */
+  code {
+    background-color: #f1f1f1;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: monospace;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    #navbar {
+      position: static;
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+  
+    #main-doc {
+      margin-left: 0;
+    }
+  }
+  .basic-li{
+    padding-left: 40px;
+
+  }
+  .basic-li li{
+    padding: 5px;
+  }
+  .listStyle{
+    padding-left: 40px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+  }
+  .para{
+    padding: 5px 0 5px 10px;
+  }
+  

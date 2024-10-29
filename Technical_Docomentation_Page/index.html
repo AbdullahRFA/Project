@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <a href="#Introduction" class="nav-link">Introduction</a>
+      <a href="#Getting_Started" class="nav-link">Getting Started</a>
+      <a href="#Basic_Syntax_and_Structure" class="nav-link">Basic Syntax and Structure</a>
+      <a href="#Data_Types" class="nav-link">Data Types</a>
+      <a href="#Control_Flow_Statement" class="nav-link">Control Flow Statement</a>
+      <a href="#Functions" class="nav-link">Functions</a>
+      <a href="#Object-Oriented_Programming_(OOP)" class="nav-link">Object-Oriented Programming (OOP)</a>
+      <a href="#Modules_and_Packages" class="nav-link">Modules and Packages</a>
+      <a href="#File_Handling" class="nav-link">File Handling</a>
+      <a href="#Error_Handling" class="nav-link">Error Handling</a>
+      <a href="#Popular_Libraries_and_Frameworks" class="nav-link">Popular Libraries and Frameworks</a>
+      <a href="#Conclusion" class="nav-link">Conclusion</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <p>
+          Python is a high-level, interpreted programming language known for its
+          simplicity, readability, and versatility. Created by Guido van Rossum
+          and first released in 1991, Python emphasizes code readability with
+          its clean syntax, making it a popular choice for both beginners and
+          experienced developers. Python supports multiple programming
+          paradigms, including procedural, object-oriented, and functional
+          programming.
+        </p>
+        <br />
+        <ul class="intro-list">
+          <li>Most used in Data Science</li>
+          <li>And Machine Learning</li>
+        </ul>
+      </section>
+
+      <section id="Getting_Started" class="main-section">
+        <header>Getting Started</header>
+        <p>
+          1. <b>Windows/MacOS</b>: Download Python from the
+          <a href="https://www.python.org/">official Python website</a> and
+          follow the installation instructions.
+        </p>
+        <p>
+          2. <b>Linux</b>: Most distributions come with Python pre-installed. To
+          check, run python3 --version in the terminal. To install Python, you
+          can use your package manager:
+        </p>
+        <br />
+        <code>sudo apt-get install python3</code>
+        <br /><br />
+        <ul class="intro-list">
+          <li>Running Python Code</li>
+          <br />
+          <p>
+            <li>
+              <b>Interactive Mode:</b> Open the terminal and type python3 to
+              start the Python interpreter.
+            </li>
+            <li>
+              <b>Script Mode:</b> Save your code in a file with the .py
+              extension and run it from the terminal with:
+            </li>
+          </p>
+          <br />
+          <code>python3 your_script.py</code>
+        </ul>
+      </section>
+
+      <section id="Basic_Syntax_and_Structure" class="main-section">
+        <header>Basic Syntax and Structure</header>
+        <p>Comments</p>
+        <ul class="basic-li">
+          <li>Single-line comments start with #.</li>
+          <li>
+            Multi-line comments can use triple quotes ('''...''' or """...""").
+          </li>
+        </ul>
+        <p><b>Variables</b></p>
+        <br />
+        <p>
+          Variables are dynamically typed, meaning you don’t have to declare
+          their types explicitly.
+        </p>
+        <br />
+        <code>
+          name = "Python" <br />
+          version = 3.9
+        </code>
+        <br /><br />
+        <p><b>Print Statements</b></p>
+        <br />
+        <p>Print to the console with print():</p>
+        <br />
+        <code>print("Hello, Python!")</code>
+      </section>
+
+      <section id="Data_Types" class="main-section">
+        <header>Data Types</header>
+        <p>Python has several built-in data types:</p>
+        <br />
+        <p>1. <b>Numeric Types</b>:</p>
+        <ul class="listStyle">
+          <li>int: Integer, e.g., 10</li>
+          <li>float: Floating-point number, e.g., 10.5</li>
+          <li>complex: Complex number, e.g., 3+4j</li>
+        </ul>
+        <p>2. <b>String Types</b>: A sequence of characters, e.g., "Hello"</p>
+        <br />
+        <p>3. <b>Boolean Types</b>: Represents True or False</p>
+        <br />
+        <p>4. <b>Data Structures</b>:</p>
+        <ul class="listStyle">
+          <li><b>List</b>: Ordered, mutable collection, e.g., [1, 2, 3]</li>
+          <li><b>Tuple</b>: Ordered, immutable collection, e.g., (1, 2, 3)</li>
+          <li>
+            <b>Set</b>: Unordered collection of unique elements, e.g., {1, 2, 3}
+          </li>
+          <li><b>Dictionary</b>: Key-value pairs, e.g., {"key": "value"}</li>
+        </ul>
+      </section>
+
+      <section id="Control_Flow_Statement" class="main-section">
+        <header>Control Flow Statement</header>
+        <p>Conditions</p>
+        <br />
+        <p>Use if, elif, and else for decision-making.</p>
+        <br />
+        <code>
+          x = 10 <br />
+          if x > 0: <br />
+          print("Positive") <br />
+          elif x == 0: <br />
+          print("Zero") <br />
+          else: <br />
+          print("Negative")
+        </code>
+        <br /><br />
+        <p>Loop</p>
+        <ul class="listStyle">
+          <li>For Loop</li>
+          <p class="para">Iterates over a sequence.</p>
+          <code>
+            for i in range(5): <br />
+            print(i)
+          </code>
+          <br /><br />
+          <li>While Loop</li>
+          <p class="para">Repeats as long as a condition is true.</p>
+          <code>
+            count = 0 <br />
+            while count < 5: <br />
+            print(count) <br />
+            count += 1
+          </code>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>
+          Functions are reusable blocks of code. Define a function with the def
+          keyword.
+        </p>
+        <br />
+        <code>
+          def greet(name): <br />
+          return f"Hello, {name}" <br />
+          print(greet("Python"))
+        </code>
+        <br /><br />
+        <p>
+          <b>Lambda Functions</b> <br />
+          <br />Anonymous, one-line functions defined with the lambda keyword.
+        </p>
+        <br />
+        <code>
+          add = lambda x, y: x + y <br />
+          print(add(5, 3))
+        </code>
+      </section>
+
+      <section class="main-section" id="Object-Oriented_Programming_(OOP)">
+        <header>Object-Oriented Programming (OOP)</header>
+        <p>
+          Python supports OOP concepts like classes and objects, inheritance,
+          and polymorphism.
+        </p>
+        <br />
+        <p><b>Classes and Objects</b></p>
+        <br />
+        <code>
+          class Dog: <br />
+          def __init__(self, name): <br />
+          self.name = name <br />
+          def bark(self): <br />
+          return f"{self.name} says Woof!" <br />
+          my_dog = Dog("Buddy") <br />
+          print(my_dog.bark())
+        </code>
+        <br />
+
+        <p><b>Inheritance</b></p>
+        <br />
+        <code>
+          class Animal: <br />
+          def speak(self): <br />
+          return "Some sound" <br />
+          class Cat(Animal): <br />
+          def speak(self): <br />
+          return "Meow" <br />
+          my_cat = Cat() <br />
+          print(my_cat.speak())
+        </code>
+      </section>
+
+      <section class="main-section" id="Modules_and_Packages">
+        <header>Modules and Packages</header>
+        <p>
+          Organize your code into modules (Python files) and packages (folders
+          containing modules).
+        </p>
+        <br />
+        <p>
+          <b>Importing Modules</b>
+        </p>
+        <br />
+        <code>import math <br /> print(math.sqrt(16))</code>
+      </section>
+
+      <section class="main-section" id="File_Handling">
+        <header>File Handling</header>
+        <p>
+          Python provides built-in functions to handle files, including reading,
+          writing, and closing files.
+        </p>
+        <br />
+        <code>
+          with open("file.txt", "r") as file: <br />
+          content = file.read() <br />
+          print(content)
+        </code>
+      </section>
+
+      <section class="main-section" id="Error_Handling">
+        <header>Error Handling</header>
+        <p>
+          Use try and except blocks to handle exceptions gracefully.
+        </p>
+        <br />
+        <code>
+          try: <br />
+          print(1 / 0) <br />
+          except ZeroDivisionError: <br />
+          print("Cannot divide by zero!")
+        </code>
+      </section>
+
+      <section class="main-section" id="Popular_Libraries_and_Frameworks">
+        <header>Popular Libraries and Frameworks</header>
+        <p>Some popular Python libraries and frameworks include:</p>
+        <ul>
+          <li>NumPy: For numerical computations</li>
+          <li>Pandas: For data manipulation and analysis</li>
+          <li>Matplotlib: For data visualization</li>
+          <li>Flask: A lightweight web framework</li>
+          <li>Django: A full-featured web framework</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Conclusion">
+        <header>Conclusion</header>
+        <p>
+          Python is a versatile programming language that caters to various
+          fields, from web development to data science. Its simplicity and
+          readability make it an excellent choice for both beginners and
+          professionals. By understanding the fundamental concepts outlined in
+          this documentation, you can start your journey in Python programming.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
