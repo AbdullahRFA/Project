@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1 id="title">Student Survey Form</h1>
-    <p id="description">Thank you for giving your valuable time to complete this survey.</p>
+    <p id="description">Thank you for participating to complete this survey.</p>
     <form id="survey-form">
 
         <fieldset class="f1">
@@ -37,7 +37,7 @@
 
         <fieldset class="inline">
             <legend>Would you like to participate in this survey?</legend>
-            <label for="definitely">
+            <label for="definitely" >
                 <input type="radio" id="definitely" value="definitely" name="participation"> Definitely
             </label>
             <label for="maybe">
@@ -61,6 +61,16 @@
                 <option value="botany">BOTANY</option>
                 <option value="bmb">BMB</option>
                 <option value="genetics">GENETICS</option>
+            </select>
+        </fieldset>
+
+        <!-- Added dropdown fieldset -->
+        <fieldset>
+            <label for="dropdown">Preferred mode of study</label>
+            <select id="dropdown" name="studyMode">
+                <option value="online">Online</option>
+                <option value="offline">Offline</option>
+                <option value="hybrid">Hybrid</option>
             </select>
         </fieldset>
 
