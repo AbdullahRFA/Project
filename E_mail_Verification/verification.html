@@ -8,28 +8,30 @@
   </head>
   <body>
     <div class="verification">
-      <h4 class="close">X</h4>
+      <h4 class="close"><a href="index.html">X</a></h4>
       <h1 class="email-header">Email Verification</h1>
-      <p>
+      <p id="authentic">
         Enter the authentication code provided by the authentication app to
         <span id="email-span"></span>
       </p>
-      <form action="">
+      <p class="code"></p>
+      <form id="verification-form">
         <div class="input">
-          <input type="text" maxlength="1" />
-          <input type="text" maxlength="1" />
-          <input type="text" maxlength="1" />
-          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" class="code-input" autofocus/>
+          <input type="text" maxlength="1" class="code-input" />
+          <input type="text" maxlength="1" class="code-input" />
+          <input type="text" maxlength="1" class="code-input" />
         </div>
 
         <div class="button">
-          <button type="submit">Verify</button>
+          <button type="submit" id="submit">Verify</button>
           <button type="reset">Clear</button>
         </div>
       </form>
+      <p class="greating">Congratulation!</p>
+      <p id="result"></p>
     </div>
 
     <script src="verify.js"></script>
-
   </body>
 </html>

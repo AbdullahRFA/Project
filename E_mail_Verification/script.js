@@ -9,8 +9,11 @@ document.getElementById('email-form')?.addEventListener('submit', function (even
     console.log('User Email:', email);
     
     // Store the email in localStorage
-    localStorage.setItem('userEmail', email);
+    
+    sessionStorage.setItem('userEmail', email);
 
     // Redirect to verification.html
     window.location.href = 'verification.html';
 });
+
+// Generate a random 4-digit number

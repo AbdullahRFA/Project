@@ -1,3 +1,4 @@
+/* Reset and global styling */
 * {
     padding: 0;
     margin: 0;
@@ -6,118 +7,185 @@
 }
 
 body {
-    background: linear-gradient(135deg, #1d2671, #c33764);
+    background: linear-gradient(135deg, #1d2671, #c33764); /* Gradient background for a modern look */
     color: #fff;
-    width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     font-size: 16px;
 }
 
+/* Verification container styling */
 .verification {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker transparent background for form */
-    padding: 40px;
-    border-radius: 12px; /* Slightly rounded corners for a softer look */
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background for form */
+    padding: 40px 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px; /* Ensure responsive layout */
     text-align: center;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow for better contrast */
     position: relative;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .verification:hover {
-    transform: translateY(-5px); /* Subtle hover effect */
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
+/* Header styling */
 .email-header {
-    font-size: 28px; /* Larger title */
+    font-size: 24px;
     color: #fff;
-    margin-bottom: 20px;
-    font-weight: 600;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
 p {
-    color: #e5e5e5;
-    margin-bottom: 20px;
-    font-size: 14px;
+    color: #d4d4d4; /* Softer text color */
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 span {
-    color: #f2c94c;
-    font-weight: 600;
+    color: #ffd700; /* Bright yellow for emphasis */
+    font-weight: 700;
+}
+
+#authentic {
+    margin-bottom: 20px; /* Added spacing below */
+}
+
+/* Input styling */
+.input {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Even spacing between input boxes */
+    margin-bottom: 20px;
 }
 
 input {
-    width: 55px;
+    width: 50px;
     height: 60px;
-    margin: 10px;
-    padding: 10px;
+    padding: 0;
     text-align: center;
-    font-size: 20px; /* Slightly larger font size for input fields */
+    font-size: 20px;
     border: 2px solid #fff;
-    border-radius: 8px;
-    background-color: #333; /* Darker background for input fields */
+    border-radius: 6px;
+    background-color: #222; /* Dark input background */
     color: #fff;
     outline: none;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 input:focus {
-    border-color: #f2c94c;
-    background-color: #444; /* Slightly lighter background color when focused */
+    border-color: #ffd700;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    outline: none;
+    transition: all 0.3s ease;
 }
-
+/* Form styling */
 form {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    gap: 15px; /* Increased gap for better spacing */
-    margin-top: 20px;
+    align-items: center;
+    gap: 15px; /* Proper spacing between buttons */
+    margin-top: 10px;
 }
-
+.button{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 button {
-    background-color: #f2c94c;
+    width: 45%;
+    max-width: 180px;
+    background-color: #ffd700;
     color: #333;
     border: none;
-    padding: 12px 20px;
+    padding: 12px;
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover {
-    background-color: #f2b94c;
-    transform: translateY(-3px); /* Slight hover effect on button */
+    background-color: #e5c200; /* Slightly darker yellow on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5); /* Subtle shadow effect */
 }
 
 button:active {
-    transform: translateY(0); /* Return to normal state on click */
+    transform: translateY(0);
 }
 
 button[type="reset"] {
-    background-color: #dcdcdc;
-    color: #333;
-    transition: background-color 0.3s ease;
+    background-color: #555;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button[type="reset"]:hover {
-    background-color: #b0b0b0;
+    background-color: #444;
+    transform: translateY(-3px);
 }
 
-h4.close {
+/* Close button */
+
+h4.close a {
+    text-decoration: none;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
+    top: 15px;
+    right: 15px;
+    font-size: 22px;
     cursor: pointer;
     color: #fff;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    font-weight: 700;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
-h4.close:hover {
-    color: #f2c94c;
+h4.close a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+/* Result and Greeting Styling */
+#result {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffd700; /* Match the theme */
+}
+
+.greating {
+    margin-top: 20px;
+    font-size: 28px;
+    color: #00ff00; /* Green for success */
+    font-weight: bold;
+    display: none; /* Initially hidden */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .verification {
+        padding: 30px 20px;
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    input {
+        width: 45px;
+        height: 50px;
+    }
+
+    button {
+        max-width: 150px;
+    }
+
+    .email-header {
+        font-size: 20px;
+    }
 }
