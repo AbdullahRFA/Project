@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify Authentication Code</title>
+    <link rel="stylesheet" href="verification.css" />
+  </head>
+  <body>
+    <div class="verification">
+      <h4 class="close">X</h4>
+      <h1 class="email-header">Email Verification</h1>
+      <p>
+        Enter the authentication code provided by the authentication app to
+        <span id="email-span"></span>
+      </p>
+      <form action="">
+        <div class="input">
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+        </div>
+
+        <div class="button">
+          <button type="submit">Verify</button>
+          <button type="reset">Clear</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="verify.js"></script>
+
+  </body>
+</html>

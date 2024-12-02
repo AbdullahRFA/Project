@@ -1,0 +1,82 @@
+/* Reset Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Email Container */
+.email-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+/* Header Styling */
+.email-header {
+    font-size: 24px;
+    font-weight: 600;
+    color: #18e6fd;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Input Styling */
+.email-form input {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.email-form input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 5px #18e6fd;
+}
+
+/* Button Styling */
+.email-form button {
+    width: 90%;
+    padding: 12px;
+    background-color: #18e6fd;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.email-form button:hover {
+    background-color: #1d2671;
+    transform: scale(1.05);
+}
